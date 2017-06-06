@@ -89,7 +89,7 @@ public class PermissionCheck {
                 if (cue) {
                     new AlertDialog.Builder(PermissionUtils.getActivity(object))
                             .setTitle("温馨提示")
-                            .setMessage("请您打开存储权限，否则将影响您的使用!")
+                            .setMessage("我们需要获取存储空间，为您存储相关信息；否则，应用将不能正常运行")
                             .setCancelable(false)
                             .setPositiveButton("去设置", new DialogInterface.OnClickListener() {
                                 @Override
@@ -97,7 +97,6 @@ public class PermissionCheck {
                                     Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
                                     intent.setData(Uri.fromParts("package", PermissionUtils.getActivity(object).getPackageName(), null));
                                     PermissionUtils.getActivity(object).startActivity(intent);
-
                                 }
                             })
                             .create()
@@ -131,7 +130,7 @@ public class PermissionCheck {
         requestResult(fragment, requestCode, permissions, grantResults);
     }
 
-    private static void requestResult(Object obj, int requestCode, String[] permissions,
+    private static void requestResult(final Object obj, final int requestCode, final String[] permissions,
                                       int[] grantResults) {
         List<String> deniedPermissions = new ArrayList<>();
         for (int i = 0; i < grantResults.length; i++) {
@@ -141,7 +140,46 @@ public class PermissionCheck {
         }
 
         if (deniedPermissions.size() > 0) {
-            callBack.applyResult(requestCode, PERMISSION_CHECK_FAILED);
+            if (permissions.length == 1) {
+                int ret = PermissionUtils.checkSinglePermission(PermissionUtils.getActivity(obj), permissions[0]);
+                if (ret == PERMISSION_CHECK_CUE) {
+                    if (cue) {
+                        new AlertDialog.Builder(PermissionUtils.getActivity(obj))
+                                .setTitle("温馨提示")
+                                .setMessage("我们需要获取存储空间，为您存储相关信息；否则，应用将不能正常运行")
+                                .setCancelable(false)
+                                .setPositiveButton("去设置", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                                        intent.setData(Uri.fromParts("package", PermissionUtils.getActivity(obj).getPackageName(), null));
+                                        PermissionUtils.getActivity(obj).startActivity(intent);
+                                    }
+                                })
+                                .create()
+                                .show();
+                    }
+                    callBack.applyResult(requestCode, PERMISSION_CHECK_CUE);
+                } else if (ret == PERMISSION_CHECK_FAILED) {
+                    if (cue) {
+                        new AlertDialog.Builder(PermissionUtils.getActivity(obj))
+                                .setTitle("温馨提示")
+                                .setMessage("请您打开存储权限，否则将影响您的使用!")
+                                .setCancelable(false)
+                                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        applyPermission(obj, Arrays.asList(permissions), requestCode);
+                                    }
+                                })
+                                .create()
+                                .show();
+                    }
+                    callBack.applyResult(requestCode, PERMISSION_CHECK_FAILED);
+                }
+            } else {
+                callBack.applyResult(requestCode, PERMISSION_CHECK_FAILED);
+            }
         } else {
             callBack.applyResult(requestCode, PERMISSION_CHECK_SUCCESS);
         }

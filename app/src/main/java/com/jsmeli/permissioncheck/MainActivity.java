@@ -29,20 +29,13 @@ public class MainActivity extends Activity implements PermissionCallBack, View.O
     public void applyResult(int requestCode, int resultCode) {
         switch (requestCode) {
             case 1:
-                if (resultCode == PermissionCheck.PERMISSION_CHECK_FAILED) {
-                    PermissionCheck
-                            .with(MainActivity.this)
-                            .setRequestCodeAndisCue(1, true)
-                            .needPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                            .callback(MainActivity.this)
-                            .check();
-                }
+                Toast.makeText(MainActivity.this, resultCode + "",Toast.LENGTH_SHORT).show();
                 break;
             case 2:
-                Toast.makeText(MainActivity.this, requestCode + "",Toast.LENGTH_SHORT);
+                Toast.makeText(MainActivity.this, resultCode + "",Toast.LENGTH_SHORT).show();
                 break;
             case 3:
-                Toast.makeText(MainActivity.this, requestCode + "",Toast.LENGTH_SHORT);
+                Toast.makeText(MainActivity.this, resultCode + "",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
