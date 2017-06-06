@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#375acc"
+        android:textSize="20sp"
+        android:text="仅供参考，后续会继续完善：" />
+
+    <TextView
+        android:id="@+id/permission_test_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c31c1c"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:text="1.单个必须权限权限检测，比如存储，拍照等，没有权限进入流程会出现一系列不必要问题" />
+
+    <TextView
+        android:id="@+id/permission_test_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c31c1c"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:text="2.单个非必须权限权限检测" />
+
+    <TextView
+        android:id="@+id/permission_test_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c31c1c"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:text="3.多个权限权限检测" />
+</LinearLayout>
