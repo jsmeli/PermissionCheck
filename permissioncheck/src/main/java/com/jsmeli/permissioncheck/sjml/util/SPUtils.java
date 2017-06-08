@@ -10,18 +10,17 @@ import java.util.Map;
 /**
  * Author:Shaojian
  * DATA:2016/11/15.
- * ACTION:SharedPreferences存储的简单封装
- * TYPE:工具类
+ * ACTION:SharedPreferences
+ * TYPE:
  */
 public class SPUtils {
     /**
-     * 保存在手机里面的文件名
+     * file name
      */
     public static final String FILE_NAME = "agent_preference";
 
     /**
-     * 保存数据的方法，我们需要拿到保存数据的具体类型，然后根据类型调用不同的保存方法
-     *
+     * save data
      * @param context
      * @param key
      * @param object
@@ -54,8 +53,7 @@ public class SPUtils {
     }
 
     /**
-     * 得到保存数据的方法，我们根据默认值得到保存的数据的具体类型，然后调用相对于的方法获取值
-     *
+     *  get data
      * @param context
      * @param key
      * @param defaultObject
@@ -80,7 +78,7 @@ public class SPUtils {
     }
 
     /**
-     * 移除某个key值已经对应的值
+     * remove this key to value
      *
      * @param context
      * @param key
@@ -94,7 +92,7 @@ public class SPUtils {
     }
 
     /**
-     * 清除所有数据
+     * clear all data
      *
      * @param context
      */
@@ -107,7 +105,7 @@ public class SPUtils {
     }
 
     /**
-     * 查询某个key是否已经存在
+     * query key is exits
      *
      * @param context
      * @param key
@@ -120,7 +118,7 @@ public class SPUtils {
     }
 
     /**
-     * 返回所有的键值对
+     * get all key-value
      *
      * @param context
      * @return
@@ -135,7 +133,7 @@ public class SPUtils {
 
 
     /**
-     * 创建一个解决SharedPreferencesCompat.apply方法的一个兼容类
+     * this function for SharedPreferencesCompat.apply
      *
      * @author zhy
      */
@@ -143,7 +141,7 @@ public class SPUtils {
         private static final Method sApplyMethod = findApplyMethod();
 
         /**
-         * 反射查找apply的方法
+         * through clazz find apply
          *
          * @return
          */
@@ -159,7 +157,7 @@ public class SPUtils {
         }
 
         /**
-         * 如果找到则使用apply执行，否则使用commit
+         * if find apply，else commit
          *
          * @param editor
          */

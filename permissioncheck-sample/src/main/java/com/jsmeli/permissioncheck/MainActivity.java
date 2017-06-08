@@ -52,6 +52,7 @@ public class MainActivity extends Activity implements PermissionCallBack, View.O
                 PermissionCheck
                         .with(MainActivity.this)
                         .setRequestCodeAndisCue(1, true)
+                        .showText(getString(R.string.title), getString(R.string.content1), getString(R.string.content2), getString(R.string.btnText1), getString(R.string.btnText2))
                         .needPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                         .callback(MainActivity.this)
                         .check();

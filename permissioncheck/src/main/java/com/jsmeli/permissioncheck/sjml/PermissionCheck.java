@@ -26,14 +26,19 @@ import java.util.List;
  */
 
 public class PermissionCheck {
+    public static final int PERMISSION_CHECK_SUCCESS = 1;
+    public static final int PERMISSION_CHECK_FAILED = 2;
+    public static final int PERMISSION_CHECK_CUE = 0;
     private Object obj;
     private int requestCode;
     private static boolean cue;
     private String[] permissions;
     private static PermissionCallBack callBack;
-    public static final int PERMISSION_CHECK_SUCCESS = 1;
-    public static final int PERMISSION_CHECK_FAILED = 2;
-    public static final int PERMISSION_CHECK_CUE = 0;
+    private static String title;
+    private static String content1;
+    private static String content2;
+    private static String btnText1;
+    private static String btnText2;
 
     private PermissionCheck(Object object) {
         this.obj = object;
@@ -49,7 +54,16 @@ public class PermissionCheck {
 
     public PermissionCheck setRequestCodeAndisCue(int requestCode, boolean cue) {
         this.requestCode = requestCode;
-        this.cue = cue;
+        PermissionCheck.cue = cue;
+        return this;
+    }
+
+    public PermissionCheck showText(String title, String content1, String content2, String btnText1, String btnText2) {
+        PermissionCheck.title = title;
+        PermissionCheck.content1 = content1;
+        PermissionCheck.content2 = content2;
+        PermissionCheck.btnText1 = btnText1;
+        PermissionCheck.btnText2 = btnText2;
         return this;
     }
 
@@ -59,7 +73,7 @@ public class PermissionCheck {
     }
 
     public PermissionCheck callback(PermissionCallBack permissionCallBack) {
-        this.callBack = permissionCallBack;
+        callBack = permissionCallBack;
         return this;
     }
 
@@ -69,7 +83,7 @@ public class PermissionCheck {
     }
 
     @TargetApi(Build.VERSION_CODES.M)
-    private static void requestPermissions(final Object object, int requestCode, String[] permissions) {
+    private void requestPermissions(final Object object, int requestCode, String[] permissions) {
         if (!PermissionUtils.isOverMarshmallow()) {
             callBack.applyResult(requestCode, PERMISSION_CHECK_SUCCESS);
             return;
@@ -88,15 +102,16 @@ public class PermissionCheck {
             } else if (ret == PERMISSION_CHECK_CUE) {
                 if (cue) {
                     new AlertDialog.Builder(PermissionUtils.getActivity(object))
-                            .setTitle("温馨提示")
-                            .setMessage("我们需要获取存储空间，为您存储相关信息；否则，应用将不能正常运行")
+                            .setTitle(title)
+                            .setMessage(content2)
                             .setCancelable(false)
-                            .setPositiveButton("去设置", new DialogInterface.OnClickListener() {
+                            .setPositiveButton(btnText2, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
                                     intent.setData(Uri.fromParts("package", PermissionUtils.getActivity(object).getPackageName(), null));
                                     PermissionUtils.getActivity(object).startActivity(intent);
+                                    System.exit(0);
                                 }
                             })
                             .create()
@@ -110,7 +125,7 @@ public class PermissionCheck {
     }
 
     @TargetApi(Build.VERSION_CODES.M)
-    public static void applyPermission(Object object, List<String> applyPermissions, int requestCode) {
+    private static void applyPermission(Object object, List<String> applyPermissions, int requestCode) {
         if (object instanceof Activity) {
             ((Activity) object).requestPermissions(applyPermissions.toArray(new String[applyPermissions.size()]), requestCode);
         } else if (object instanceof Fragment) {
@@ -125,7 +140,7 @@ public class PermissionCheck {
         requestResult(activity, requestCode, permissions, grantResults);
     }
 
-    public static void onRequestPermissionsResult(Fragment fragment, int requestCode, String[] permissions,
+    public void onRequestPermissionsResult(Fragment fragment, int requestCode, String[] permissions,
                                                   int[] grantResults) {
         requestResult(fragment, requestCode, permissions, grantResults);
     }
@@ -145,15 +160,16 @@ public class PermissionCheck {
                 if (ret == PERMISSION_CHECK_CUE) {
                     if (cue) {
                         new AlertDialog.Builder(PermissionUtils.getActivity(obj))
-                                .setTitle("温馨提示")
-                                .setMessage("我们需要获取存储空间，为您存储相关信息；否则，应用将不能正常运行")
+                                .setTitle(title)
+                                .setMessage(content2)
                                 .setCancelable(false)
-                                .setPositiveButton("去设置", new DialogInterface.OnClickListener() {
+                                .setPositiveButton(btnText2, new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
                                         intent.setData(Uri.fromParts("package", PermissionUtils.getActivity(obj).getPackageName(), null));
                                         PermissionUtils.getActivity(obj).startActivity(intent);
+                                        System.exit(0);
                                     }
                                 })
                                 .create()
@@ -163,10 +179,10 @@ public class PermissionCheck {
                 } else if (ret == PERMISSION_CHECK_FAILED) {
                     if (cue) {
                         new AlertDialog.Builder(PermissionUtils.getActivity(obj))
-                                .setTitle("温馨提示")
-                                .setMessage("请您打开存储权限，否则将影响您的使用!")
+                                .setTitle(title)
+                                .setMessage(content1)
                                 .setCancelable(false)
-                                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                .setPositiveButton(btnText1, new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         applyPermission(obj, Arrays.asList(permissions), requestCode);
@@ -184,5 +200,4 @@ public class PermissionCheck {
             callBack.applyResult(requestCode, PERMISSION_CHECK_SUCCESS);
         }
     }
-
 }

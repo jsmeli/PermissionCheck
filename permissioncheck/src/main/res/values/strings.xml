@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Permission</string>
+    <string name="title">Warm</string>
+    <string name="content1">Please open the relevant permissions!!!</string>
+    <string name="content2">Please open the relevant permissions!!!\nSettings->App Manage->Permission Manage</string>
+    <string name="btnText1">Sure</string>
+    <string name="btnText2">Go Setting</string>
 </resources>
