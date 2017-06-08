@@ -1719,7 +1719,12 @@ containing a value of this type.
         public static int abc_shareactionprovider_share_with_application=0x7f05000f;
         public static int abc_toolbar_collapse_description=0x7f050010;
         public static int app_name=0x7f050012;
+        public static int btnText1=0x7f050013;
+        public static int btnText2=0x7f050014;
+        public static int content1=0x7f050015;
+        public static int content2=0x7f050016;
         public static int status_bar_notification_info_overflow=0x7f050011;
+        public static int title=0x7f050017;
     }
     public static final class style {
         public static int AlertDialog_AppCompat=0x7f07007a;
