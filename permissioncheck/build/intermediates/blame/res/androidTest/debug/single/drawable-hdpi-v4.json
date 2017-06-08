@@ -4,20 +4,8 @@
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-hdpi/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-hdpi/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
@@ -38,10 +26,6 @@
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
@@ -166,9 +150,5 @@
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-hdpi/abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_control_off_mtrl_alpha.png"
     }
 ]
