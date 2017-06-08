@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_search_url_text.xml"
     },
@@ -10,6 +14,10 @@
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml",

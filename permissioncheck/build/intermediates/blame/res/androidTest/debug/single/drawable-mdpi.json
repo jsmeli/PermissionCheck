@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-mdpi/abc_popup_background_mtrl_mult.9.png",
