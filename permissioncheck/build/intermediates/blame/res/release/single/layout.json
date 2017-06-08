@@ -128,12 +128,12 @@
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/release/layout/abc_search_view.xml",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_search_view.xml"
-    },
-    {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
