@@ -4,12 +4,12 @@
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png",
-        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi/abc_btn_rating_star_on_mtrl_alpha.png",
         "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png"
     },
     {
         "merged": "/Users/xiaomengli/AndroidStudioProjects/PermissionCheck/permissioncheck/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi/abc_ic_menu_selectall_mtrl_alpha.png",
