@@ -140,7 +140,7 @@ public class PermissionCheck {
         requestResult(activity, requestCode, permissions, grantResults);
     }
 
-    public void onRequestPermissionsResult(Fragment fragment, int requestCode, String[] permissions,
+    public static void onRequestPermissionsResult(Fragment fragment, int requestCode, String[] permissions,
                                                   int[] grantResults) {
         requestResult(fragment, requestCode, permissions, grantResults);
     }
