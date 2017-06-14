@@ -35,7 +35,7 @@ PermissionCheck
     }
 ```
 效果图：
-![img](https://github.com/jsmeli/mvn-repo-jsmeli/blob/master/img_files/ness_permission.png)
+</br>![img](https://github.com/jsmeli/mvn-repo-jsmeli/blob/master/img_files/uness_permission.png)
 ***
 2.多个权限申请第一步：
 ```java
@@ -67,7 +67,7 @@ PermissionCheck
     }
 ```
 效果图:
-![img](https://github.com/jsmeli/mvn-repo-jsmeli/blob/master/img_files/uness_permission.png)
+</br>![img](https://github.com/jsmeli/mvn-repo-jsmeli/blob/master/img_files/ness_permission.png)
 
 </br>ps：设置弹窗与否针对于单个必须权限的检查
 ***
