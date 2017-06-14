@@ -33,9 +33,11 @@ PermissionCheck
         PermissionCheck.onRequestPermissionsResult(MainActivity.this, requestCode, permissions, grantResults);
     }
 ```
-***
+
 以上就可以使用了，简单方便快捷
 </br>ps：设置弹窗与否针对于单个必须权限的检查
+***
+
 # 效果图：
 
 
